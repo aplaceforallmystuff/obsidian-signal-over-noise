@@ -1,0 +1,327 @@
+/* Signal Over Noise Theme for Obsidian
+ * Mid-century modern, retro-futuristic aesthetic
+ * Brand colors: Teal, Burnt Orange, Cream, Sage Green, Navy, Mustard
+ */
+
+/* ========================================
+   COLOR PALETTE
+   ======================================== */
+
+:root {
+  /* Brand Colors */
+  --son-teal: #1B9AAA;
+  --son-teal-light: #2EAFBC;
+  --son-teal-dark: #157A88;
+  --son-orange: #EF6351;
+  --son-orange-light: #F4806F;
+  --son-orange-dark: #D94535;
+  --son-cream: #F7F4EA;
+  --son-cream-dark: #EDE9DB;
+  --son-black: #1A1A1A;
+  --son-sage: #88AB8E;
+  --son-sage-light: #A3C4A3;
+  --son-navy: #2C3E50;
+  --son-mustard: #E5B945;
+  --son-mustard-light: #EEC95E;
+
+  /* Neutral tones */
+  --son-gray-100: #F5F5F5;
+  --son-gray-200: #E5E5E5;
+  --son-gray-300: #D4D4D4;
+  --son-gray-400: #A3A3A3;
+  --son-gray-500: #737373;
+  --son-gray-600: #525252;
+  --son-gray-700: #404040;
+  --son-gray-800: #262626;
+  --son-gray-900: #171717;
+}
+
+/* ========================================
+   LIGHT THEME
+   ======================================== */
+
+.theme-light {
+  /* Backgrounds */
+  --background-primary: var(--son-cream);
+  --background-primary-alt: var(--son-cream-dark);
+  --background-secondary: #FFFFFF;
+  --background-secondary-alt: var(--son-gray-100);
+  --background-modifier-border: var(--son-gray-200);
+  --background-modifier-form-field: #FFFFFF;
+  --background-modifier-form-field-highlighted: var(--son-gray-100);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: var(--son-sage-light);
+  --background-modifier-error: var(--son-orange-light);
+  --background-modifier-error-hover: var(--son-orange);
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+  /* Text */
+  --text-normal: var(--son-black);
+  --text-muted: var(--son-gray-500);
+  --text-faint: var(--son-gray-400);
+  --text-on-accent: #FFFFFF;
+  --text-error: var(--son-orange-dark);
+  --text-success: var(--son-sage);
+  --text-selection: rgba(27, 154, 170, 0.2);
+  --text-accent: var(--son-teal);
+  --text-accent-hover: var(--son-teal-dark);
+
+  /* Interactive elements */
+  --interactive-normal: var(--son-gray-100);
+  --interactive-hover: var(--son-gray-200);
+  --interactive-accent: var(--son-teal);
+  --interactive-accent-hover: var(--son-teal-dark);
+  --interactive-success: var(--son-sage);
+
+  /* Scrollbar */
+  --scrollbar-bg: var(--son-cream-dark);
+  --scrollbar-thumb-bg: var(--son-gray-300);
+  --scrollbar-active-thumb-bg: var(--son-gray-400);
+
+  /* Links */
+  --link-color: var(--son-teal);
+  --link-color-hover: var(--son-teal-dark);
+  --link-external-color: var(--son-navy);
+  --link-external-color-hover: var(--son-teal);
+  --link-unresolved-color: var(--son-orange);
+
+  /* Tags */
+  --tag-color: var(--son-teal);
+  --tag-background: rgba(27, 154, 170, 0.1);
+  --tag-color-hover: var(--son-teal-dark);
+  --tag-background-hover: rgba(27, 154, 170, 0.2);
+
+  /* Headings */
+  --h1-color: var(--son-black);
+  --h2-color: var(--son-navy);
+  --h3-color: var(--son-teal-dark);
+  --h4-color: var(--son-gray-700);
+  --h5-color: var(--son-gray-600);
+  --h6-color: var(--son-gray-500);
+
+  /* Code */
+  --code-normal: var(--son-orange-dark);
+  --code-background: var(--son-gray-100);
+
+  /* Blockquotes */
+  --blockquote-border-color: var(--son-teal);
+
+  /* Checkbox */
+  --checkbox-color: var(--son-teal);
+  --checkbox-color-hover: var(--son-teal-dark);
+  --checkbox-marker-color: #FFFFFF;
+  --checklist-done-color: var(--son-gray-400);
+
+  /* Graph */
+  --graph-line: var(--son-gray-300);
+  --graph-node: var(--son-teal);
+  --graph-node-focused: var(--son-orange);
+  --graph-node-tag: var(--son-sage);
+  --graph-node-attachment: var(--son-mustard);
+}
+
+/* ========================================
+   DARK THEME
+   ======================================== */
+
+.theme-dark {
+  /* Backgrounds */
+  --background-primary: var(--son-black);
+  --background-primary-alt: var(--son-gray-900);
+  --background-secondary: var(--son-gray-800);
+  --background-secondary-alt: var(--son-gray-700);
+  --background-modifier-border: var(--son-gray-700);
+  --background-modifier-form-field: var(--son-gray-800);
+  --background-modifier-form-field-highlighted: var(--son-gray-700);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: rgba(136, 171, 142, 0.2);
+  --background-modifier-error: rgba(239, 99, 81, 0.2);
+  --background-modifier-error-hover: var(--son-orange);
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+  /* Text */
+  --text-normal: var(--son-cream);
+  --text-muted: var(--son-gray-400);
+  --text-faint: var(--son-gray-500);
+  --text-on-accent: var(--son-black);
+  --text-error: var(--son-orange-light);
+  --text-success: var(--son-sage-light);
+  --text-selection: rgba(27, 154, 170, 0.3);
+  --text-accent: var(--son-teal-light);
+  --text-accent-hover: var(--son-teal);
+
+  /* Interactive elements */
+  --interactive-normal: var(--son-gray-700);
+  --interactive-hover: var(--son-gray-600);
+  --interactive-accent: var(--son-teal);
+  --interactive-accent-hover: var(--son-teal-light);
+  --interactive-success: var(--son-sage);
+
+  /* Scrollbar */
+  --scrollbar-bg: var(--son-gray-900);
+  --scrollbar-thumb-bg: var(--son-gray-600);
+  --scrollbar-active-thumb-bg: var(--son-gray-500);
+
+  /* Links */
+  --link-color: var(--son-teal-light);
+  --link-color-hover: var(--son-teal);
+  --link-external-color: var(--son-mustard);
+  --link-external-color-hover: var(--son-mustard-light);
+  --link-unresolved-color: var(--son-orange);
+
+  /* Tags */
+  --tag-color: var(--son-teal-light);
+  --tag-background: rgba(27, 154, 170, 0.15);
+  --tag-color-hover: var(--son-teal);
+  --tag-background-hover: rgba(27, 154, 170, 0.25);
+
+  /* Headings */
+  --h1-color: var(--son-cream);
+  --h2-color: var(--son-teal-light);
+  --h3-color: var(--son-mustard);
+  --h4-color: var(--son-gray-300);
+  --h5-color: var(--son-gray-400);
+  --h6-color: var(--son-gray-500);
+
+  /* Code */
+  --code-normal: var(--son-orange-light);
+  --code-background: var(--son-gray-800);
+
+  /* Blockquotes */
+  --blockquote-border-color: var(--son-teal);
+
+  /* Checkbox */
+  --checkbox-color: var(--son-teal);
+  --checkbox-color-hover: var(--son-teal-light);
+  --checkbox-marker-color: var(--son-black);
+  --checklist-done-color: var(--son-gray-500);
+
+  /* Graph */
+  --graph-line: var(--son-gray-600);
+  --graph-node: var(--son-teal);
+  --graph-node-focused: var(--son-orange);
+  --graph-node-tag: var(--son-sage);
+  --graph-node-attachment: var(--son-mustard);
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+body {
+  --font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-monospace-theme: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+}
+
+/* Headings */
+.markdown-rendered h1,
+.cm-header-1 {
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+.markdown-rendered h2,
+.cm-header-2 {
+  font-weight: 600;
+  margin-top: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered h3,
+.cm-header-3 {
+  font-weight: 600;
+}
+
+/* ========================================
+   UI ELEMENTS
+   ======================================== */
+
+/* Accent color for buttons and active states */
+.mod-cta {
+  background-color: var(--son-teal) !important;
+  color: white !important;
+}
+
+.mod-cta:hover {
+  background-color: var(--son-teal-dark) !important;
+}
+
+/* File explorer active file */
+.nav-file-title.is-active {
+  background-color: rgba(27, 154, 170, 0.15);
+  color: var(--text-accent);
+}
+
+/* Tab active state */
+.workspace-tab-header.is-active {
+  border-bottom-color: var(--son-teal);
+}
+
+/* Callouts */
+.callout[data-callout="tip"] {
+  --callout-color: 27, 154, 170;
+}
+
+.callout[data-callout="warning"] {
+  --callout-color: 229, 185, 69;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  --callout-color: 239, 99, 81;
+}
+
+.callout[data-callout="success"] {
+  --callout-color: 136, 171, 142;
+}
+
+.callout[data-callout="info"] {
+  --callout-color: 44, 62, 80;
+}
+
+/* ========================================
+   EDITOR ENHANCEMENTS
+   ======================================== */
+
+/* Bold text */
+strong, .cm-strong {
+  color: var(--son-orange);
+  font-weight: 600;
+}
+
+/* Italic text */
+em, .cm-em {
+  color: var(--son-sage);
+}
+
+/* Highlights */
+mark, .cm-highlight {
+  background-color: rgba(229, 185, 69, 0.3);
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+}
+
+/* Horizontal rule */
+hr {
+  border-color: var(--son-teal);
+  opacity: 0.3;
+}
+
+/* Tables */
+.markdown-rendered th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+}
+
+.markdown-rendered tr:nth-child(even) {
+  background-color: var(--background-secondary-alt);
+}
+
+/* ========================================
+   MOBILE ADJUSTMENTS
+   ======================================== */
+
+.is-mobile {
+  --font-text-size: 16px;
+}
